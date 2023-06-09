@@ -1,12 +1,14 @@
 import PropTypes from 'prop-types';
 
-export const FirstApp = function ({ title, subtitle }) {
+export const FirstApp = function ({ title, subtitle, name }) {
 
     return (
         <>
-            <h1>{title}</h1>
+            <h1 data-testid="test-title">{title}</h1>
             {/* <code>{ JSON.stringify(newMessage) }</code> */}
             <p>{subtitle}</p>
+            <p>{subtitle}</p>
+            <p>{name}</p>
         </>
     )
 }
@@ -17,6 +19,7 @@ FirstApp.propTypes = {
 }
 
 FirstApp.defaultProps = {
-    title: 'No hay titulo',
-    subtitle: 'No hay subtitulo'
+    // title: 'No hay titulo',
+    subtitle: 'No hay subtitulo',
+    name: 'Luis Carlos'
 }
