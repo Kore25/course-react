@@ -10,6 +10,7 @@ export function GifGrid({ category }) {
             {
                 isLoading && (<h2>Cargando ...</h2>)
             }
+            { (images.length === 0 && !isLoading) && (<h2>No hay gifs con este texto.</h2>) }
             <div className="card-grid">
                 {
                     images.map( (image) => (
