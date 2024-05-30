@@ -5,6 +5,7 @@ export const useForm = ( initialForm = {} ) => {
     const [formState, setFormState] = useState( initialForm );
 
     const onInputChange = ({target}) => {
+        console.log('from test -->', target);
         const { name, value } = target;
         setFormState({
             ...formState,
